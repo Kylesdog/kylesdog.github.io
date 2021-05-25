@@ -7,7 +7,7 @@
         font-family: Arial;
         margin: 0;
       }
-      .header {
+      #header {
         padding: 60px;
         text-align: left;
         background: #1abc9c;
@@ -24,14 +24,34 @@
       .grey {
         background-color: grey;
       }
+      #amogus {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 60px;
+      }
     </style>
   </head>
   <body class="grey">
-    <div class="header">
-      <h2>Unin.Xyz</h2>
-      <h1>My Website or smth</h1>
-      <a href="https://mrow.party/">Check Out My Friends Website</a>
+    <div>
+      <div id="header">
+        <h2 style="margin-top: 0px;">Unin.Xyz</h2>
+        <h1>My Website or smth</h1>
+        <a href="https://mrow.party/">Check Out My Friends Website</a>
+      </div>
+      <img id="amogus" src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/c325ce14d0143b3e93c65b8cc8a2eabc/large.png">
     </div>
+    <script>
+      function fixAmogusSize() {
+        var amogus = document.getElementById("amogus");
+        var headerheight = document.getElementById("header").offsetHeight;
+        headerheight += -120;
+        var newsize = headerheight + "px";
+        amogus.style.height = newsize;
+      }
+      window.onresize = fixAmogusSize;
+      fixAmogusSize();
+    </script>
     <h1>Why are you here?</h1>
     <h2>You must stay now!</h2>
     <div>
