@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  margin: 0px;
+}
+#header {
+  padding: 70px;
+  text-align: left;
+  background: #15c7fd;
+  color: white;
+  font-size: 20px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 8%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+a {
+  color: blue; 
+}
+.border {
+  border-style: outset;
+  border-width: 7px;
+  border-color: #F35675;
+}
+.border2 {
+  border-style: outset;
+  border-width: 10px;
+  border-color: gold;
+}
+.grey {
+  background-color: rgb(226, 197, 197);
+}
+#amogus {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 60px;
+}
+#main {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+#scroll {
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 700px;
+}
+#scroll img {
+  align-self: center;
+}
